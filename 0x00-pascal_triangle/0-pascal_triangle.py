@@ -17,7 +17,7 @@ def pascal_triangle(n):
         nw_row[len(nw_row) - 1] = 1
 
         for ji in range(1, ix):
-            if ji > 0 and j < len(nw_row):
+            if ji > 0 and ji < len(nw_row):
                 la = pascal_triangle[ix - 1][ji]
                 lb = pascal_triangle[ix - 1][ji - 1]
                 nw_row[ji] = la + lb
