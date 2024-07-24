@@ -9,7 +9,7 @@ def validUTF8(data):
     """
     skp = 0
     nu = len(data)
-    for ix in range(n):
+    for ix in range(nu):
         if skp > 0:
             skp -= 1
             continue
